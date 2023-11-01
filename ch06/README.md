@@ -100,9 +100,10 @@
 - 지역변수 : 꼭!!! 초기화를 해주어야한다.
 
 ### 멤버변수의 초기화 방법
-- 명시적 초기화(explicit initialization)
-- 생성자(constructor)
-- 초기화 블럭(initialization block)
+1. 명시적 초기화(explicit initialization)
+2. 생성자(constructor)
+3. 초기화 블럭(initialization block)
+
   ```
   1. 인스턴스 초기화 블럭 : { }
      - 생성자에서 공통적으로 수행되는 작업에 사용되며 인스턴스가 생성될 때 마다 (생성자보다 먼저) 실행된다.
