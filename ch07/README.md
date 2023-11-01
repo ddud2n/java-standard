@@ -132,4 +132,4 @@ hashCode()
 <br><br>
 
 ### 참고
-- 
+- protected class 가 존재하지 않는 이유?
