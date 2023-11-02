@@ -2,8 +2,6 @@ package Practice;
 
 /**
  * <pre>
- * Date		: 2020. 4. 4.
- * Author 	: pureboyz
  * 
  * Lotto 당첨번호 추첨 프로그램 만들기.
  * 

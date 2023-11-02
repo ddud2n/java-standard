@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 /**
  * <pre>
- * Date		: 2020. 3. 20.
- * Author	: pureboyz
- * 
  * 사용자가 입력한 값이 변환될 수 있는 타입을 알려주는 프로그램.
  * </pre>
  */
@@ -73,9 +70,6 @@ public class Casting_example
 	/**
 	 * <pre>
 	 * MethodName	: castToChar
-	 * Date 		: 2020. 3. 20.
-	 * Author		: pureboyz
-	 * 
 	 * Params		: 
 	 * ReturnType	: String
 	 * 
@@ -103,9 +97,6 @@ public class Casting_example
 	/**
 	 * <pre>
 	 * MethodName	: castToInteger
-	 * Date 		: 2020. 3. 20.
-	 * Author		: pureboyz
-	 * 
 	 * Params		: 
 	 * ReturnType	: String
 	 * 
@@ -149,9 +140,6 @@ public class Casting_example
 	/**
 	 * <pre>
 	 * MethodName	: castToRealNumber
-	 * Date 		: 2020. 3. 20.
-	 * Author		: pureboyz
-	 * 
 	 * Params		: 
 	 * ReturnType	: String
 	 * 
@@ -183,9 +171,6 @@ public class Casting_example
 	/**
 	 * <pre>
 	 * MethodName	: castToBoolean
-	 * Date 		: 2020. 3. 20.
-	 * Author		: pureboyz
-	 * 
 	 * Params		: 
 	 * ReturnType	: String
 	 * 
