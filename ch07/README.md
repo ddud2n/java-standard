@@ -65,7 +65,7 @@ hashCode()
 
 ### 제어자의 조합
 - 클래스 : public, (default), final, abstract
-     - ~~protected~~, ~~private~~ : 해당 Inner class의 접근제한을 할 수 있습니다.
+     - ~~protected~~, ~~private~~ : 해당 Inner class의 접근을 제한할 수 있습니다.
 - 메서드 : 모든 접근제어자, final, abstract, static
 - 멤버변수 : 모든 접근제어자, final, ~~abstract~~, static
 - 지역변수 : final
