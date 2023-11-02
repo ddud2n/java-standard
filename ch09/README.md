@@ -68,9 +68,12 @@ String str4 = new String(“abc”); // 동등 O , 동일 X
         * BigDecimal
 
 
-<br><br>
+<br>
+
 ### 참고
 * [equals VS hashCode](https://mangkyu.tistory.com/101)
 * [Hash 코드와 31](https://velog.io/@indongcha/hashCode%EC%99%80-31)
 * [String, String Buffer, String Builder](https://inpa.tistory.com/entry/JAVA-%E2%98%95-String-StringBuffer-StringBuilder-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%84%B1%EB%8A%A5-%EB%B9%84%EA%B5%90)
 * [Wrapper Class](https://inpa.tistory.com/entry/JAVA-%E2%98%95-wrapper-class-Boxing-UnBoxing)
+
+
