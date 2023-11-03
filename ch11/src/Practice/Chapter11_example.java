@@ -5,8 +5,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Chapter11_seungha_200524
-{
+public class Chapter11_example {
 
 	public static void main(String[] args)
 	{
