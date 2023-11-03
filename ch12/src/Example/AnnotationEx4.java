@@ -24,7 +24,7 @@ class MyArrayList<T> {
 }
 
 class AnnotationEx4 {
-//	@SuppressWarnings("unchecked")	// [by LSH] 실제로 불필요해보임
+//	@SuppressWarnings("unchecked")
 	public static void main(String args[]) {
 		MyArrayList<String> list = MyArrayList.asList("1", "2", "3");
 		
