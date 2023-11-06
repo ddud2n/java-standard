@@ -107,8 +107,8 @@ boolean isLocked()
 <br><br>
 
 ### 참고
-쓰레드 VS 프로세스
-Blocking VS Non-Blocking
-쓰레드 동기화
-비관적 VS 낙관적 Lock
-Thread safe?
+* 쓰레드 VS 프로세스
+* Blocking VS Non-Blocking
+* 쓰레드 동기화
+* 비관적 VS 낙관적 Lock
+* Thread safe?
