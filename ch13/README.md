@@ -54,9 +54,30 @@ t2.start();
 <br>
 
 ## 쓰레드의 실행제어
+- 쓰레드의 실행을 제어(스케줄링)할 수 있는 메서드가 제공된다.
+- 단, resume(), stop(), suspend()는 쓰레드를 교착상태로 만들기 쉽기 때문에 deprecated되었다.
+- yield()와 interrupt()를 적절히 사용하면, 응답성과 효율을 높일 수 있다.
+
+```java
+void start() // 쓰레드 생성 
+static void sleep(long mills) // 현재 쓰레드를 지정된 시간동안 일시정지한다. 그 후, 실행 대기
+void join(long mills) // 지정된 시간동안 특정 쓰레드가 작업하는 것을 기다린다. 지정된 시간이 지나면 join을 호출한 쓰레드로 돌아와 수행한다.
+void interrupt() // sleep, join 에 의해 일시정지 상태의 쓰레드를 깨워서 실행대기상태로 만든다. 이때, InterruptException이 발생한다.
+void suspend() // 쓰레드 일시정지
+void resume() // suspend 된 쓰레드를 실행 대기상태로 만든다.
+void stop() // 쓰레드 종료
+static void yield() // 자신에게 주어진 시간을 사용하지 않고 다른 쓰레드에게 양보한다. 그 후, 실행 대기
+
+
+```
+<br>
+
+## 쓰레드 동기화
 
 
 
+
+<br><br>
 
 ### 참고
 Blocking VS Non-Blocking
