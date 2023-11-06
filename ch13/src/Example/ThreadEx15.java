@@ -12,7 +12,7 @@ class ThreadEx15 {
 		th3.start();
 		
 		try {
-			Thread.sleep(2000);	// [by LSH] main 이 흐르는 시간 관장
+			Thread.sleep(2000);
 			th1.suspend();		// 쓰레드 th1을 잠시 중단시킨다.
 			Thread.sleep(2000);
 			th2.suspend();
@@ -32,7 +32,7 @@ class RunImplEx15 implements Runnable {
 		while(true) {
 			System.out.println(Thread.currentThread().getName());
 			try {
-				Thread.sleep(1000);	// [by LSH] 출력하는 단위 시간 관장
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {}
 		}
 	}

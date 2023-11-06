@@ -78,7 +78,6 @@ static void yield() // 자신에게 주어진 시간을 사용하지 않고 다�
 - notify() : waiting pool에서 대기중인 쓰레드 중의 하나를 깨운다.
 - notifyAll() : waiting pool에서 대기중인 모든 쓰레드를 깨운다.
 
-<br>
 
 ## Lock을 이용한 동기화
 - 낙관적인 잠금(Optimistic Lock) : 수정할 때 수정했다고 명시하여 다른 트랜잭션이 동일한 조건으로 값을 수정할 수 없게 하는 것
@@ -89,13 +88,12 @@ void unlock()
 boolean isLocked()
 ```
 
-<br>
+
 
 ## volatile
 - 성능 향상을 위해 변수의 값을 core의 cache에 저장해 놓고 작업
 - 여러 쓰레드가 공유하는 변수에는 volatile을 붙여야 항상 메모리에서 읽어옴
 
-<br>
 
 ## fork
 - 작업을 여러 쓰레드가 나눠서 처리하는 것을 쉽게 해준다.

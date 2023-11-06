@@ -28,7 +28,7 @@ class RunImplEx16_Test implements Runnable {
 			if(!suspended) {
 				System.out.println(Thread.currentThread().getName());
 				try {
-					Thread.sleep(1000);	// [by LSH] 출력하는 단위 시간 관장
+					Thread.sleep(1000);
 				} catch(InterruptedException e) {}
 			}
 			/* */
