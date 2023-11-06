@@ -104,7 +104,6 @@ boolean isLocked()
 - 비동기함수 fork() 로 나눈 작업을 큐에 넣고, compute()를 재귀호출한다.
 - work stealing : 작업을 나눠서 다른 쓰레드의 작업 큐에 넣는 것
 
-
 <br><br>
 
 ### 참고
