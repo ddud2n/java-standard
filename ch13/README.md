@@ -67,17 +67,49 @@ void suspend() // 쓰레드 일시정지
 void resume() // suspend 된 쓰레드를 실행 대기상태로 만든다.
 void stop() // 쓰레드 종료
 static void yield() // 자신에게 주어진 시간을 사용하지 않고 다른 쓰레드에게 양보한다. 그 후, 실행 대기
-
-
 ```
 <br>
 
 ## 쓰레드 동기화
+- `synchronized`
+- 한 번에 하나의 쓰레드만 객체에 접근할 수 있도록 객체에 락(lock)을 걸어서 데이터의 일관성을 유지하는 것.
+- 동기화의 효율을 높이기 위해 wait(), notify()를 사용.
+- wait() : 객체의 lock을 풀고 쓰레드를 해당 객체의 waiting pool에 넣는다.
+- notify() : waiting pool에서 대기중인 쓰레드 중의 하나를 깨운다.
+- notifyAll() : waiting pool에서 대기중인 모든 쓰레드를 깨운다.
 
+<br>
 
+## Lock을 이용한 동기화
+- 낙관적인 잠금(Optimistic Lock) : 수정할 때 수정했다고 명시하여 다른 트랜잭션이 동일한 조건으로 값을 수정할 수 없게 하는 것
+- 비관적인 잠금() : DB의 Lock 기능 (트랜잭션이 시작될 때 Shared Lock 또는 Exclusive Lock)
+```java
+void lock()
+void unlock()
+boolean isLocked()
+```
+
+<br>
+
+## volatile
+- 성능 향상을 위해 변수의 값을 core의 cache에 저장해 놓고 작업
+- 여러 쓰레드가 공유하는 변수에는 volatile을 붙여야 항상 메모리에서 읽어옴
+
+<br>
+
+## fork
+- 작업을 여러 쓰레드가 나눠서 처리하는 것을 쉽게 해준다.
+- compute() 함수를 구현하여 수행할 작업과 작업을 어떻게 나눌 것인지를 정해줘야 한다.
+- 동기함수 join() 으로 작업 결과를 합친다.
+- 비동기함수 fork() 로 나눈 작업을 큐에 넣고, compute()를 재귀호출한다.
+- work stealing : 작업을 나눠서 다른 쓰레드의 작업 큐에 넣는 것
 
 
 <br><br>
 
 ### 참고
+쓰레드 VS 프로세스
 Blocking VS Non-Blocking
+쓰레드 동기화
+비관적 VS 낙관적 Lock
+Thread safe?
