@@ -82,7 +82,7 @@ static void yield() // 자신에게 주어진 시간을 사용하지 않고 다�
 
 ## Lock을 이용한 동기화
 - 낙관적인 잠금(Optimistic Lock) : 수정할 때 수정했다고 명시하여 다른 트랜잭션이 동일한 조건으로 값을 수정할 수 없게 하는 것
-- 비관적인 잠금() : DB의 Lock 기능 (트랜잭션이 시작될 때 Shared Lock 또는 Exclusive Lock)
+- 비관적인 잠금(Pessimistic lock) : DB의 Lock 기능 (트랜잭션이 시작될 때 Shared Lock 또는 Exclusive Lock)
 ```java
 void lock()
 void unlock()
