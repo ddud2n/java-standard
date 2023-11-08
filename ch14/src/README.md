@@ -50,4 +50,28 @@ BiFunction<String,String,Boolean> f = String::equals; // 인스턴스 메서드 
 <br>
 
 ## Stream
+- java 1.8 에서 새로이 추가
+- 다양한 데이터 소스를 표준화된 방법으로 다루기 위한 것
+- 스트림은 데이터를 읽을 뿐 변경하지 않는다
+- iterator 처럼 일회용이다
+- 촤종연산 전까지 중간연산이 수행되지 않는다(지연된 연산)
+
+
+```java
+List<Integer> list = Arrays.asList(1,2,3,4,5);
+Stream<Integer> intStream  = list.stream(); // 컬렉션.
+Stream<String>  strStream  = Stream.of(new String[]{"a","b","c"}); // 배열
+Stream<Integer> evenStream   = Stream.iterate(0, n->n+2);  // 0,2,4,6, ...
+Stream<Double>  randomStream = Stream.generate(Math::random);    // 람다식
+IntStream      intStream    = new Random().ints(5); // 난수 스트림(크기가 5)
+```
+
+
+
+
+
+
+
+
+
 
