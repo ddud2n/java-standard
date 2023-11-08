@@ -55,6 +55,7 @@ BiFunction<String,String,Boolean> f = String::equals; // 인스턴스 메서드 
 - 스트림은 데이터를 읽을 뿐 변경하지 않는다
 - iterator 처럼 일회용이다
 - 촤종연산 전까지 중간연산이 수행되지 않는다(지연된 연산)
+- 스트림은 작업을 내부 반복으로 처리한다.
 
 
 ```java
@@ -64,4 +65,65 @@ Stream<String>  strStream  = Stream.of(new String[]{"a","b","c"}); // 배열
 Stream<Integer> evenStream   = Stream.iterate(0, n->n+2);  // 0,2,4,6, ...
 Stream<Double>  randomStream = Stream.generate(Math::random);    // 람다식
 IntStream      intStream    = new Random().ints(5); // 난수 스트림(크기가 5)
+IntStream      intStream    = IntStream.range(1,5); // 특정범위의 정수를 요소로 갖는 스트림
 ```
+
+```java
+// 스트림 메서드
+skip()
+limit()
+filter()
+distinct()
+sorted()
+map() // 스트림 요소 변환
+flatMap() // 스트림의 스트림을 스트림으로 변환
+peek() // 중간연산(스트림을 소비)
+forEach() // 최종연산 (스트림을 소비)
+forEachOrdered()
+toArray()
+allMatch()
+anyMatch()
+noneMatch()
+findFirst()
+findAny()
+count()
+sum()
+average()
+max()
+min()
+reduce() // 스트림의 요소를 하나씩 줄여가며 누적연산 수행
+collect() // Collector를 매개변수로 하는 스트림의 최종연산
+
+// 컬렉터 메서드
+toList()
+toSet()
+toCollection()
+counting()
+summingIng()
+maxBy()
+minBy()
+joining() // 문자열 스트림의 요소를 모두 연결
+groupingBy()
+```
+
+### Optional
+* `Optional<T>` : T 타입 객체의 래퍼 클래스
+* 기본형 값을 감싸는 래퍼클래스 : `OptionalInt`, `OptionalLong`, `OptionalDouble`
+* null 처리를 위해 사용함
+
+```java
+Optional<String> opt = Optional.of(str);
+Optional<String> opt = Optional.ofNullable(null);
+// 객체의 값 가져오기
+get()
+getAsInt()
+getAsLong()
+getAsDouble()
+orElse()
+orElseGet()
+orElseThrow()
+isPresent()
+```
+
+
+
