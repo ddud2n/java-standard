@@ -16,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/ch12/ch12.iml" filepath="$PROJECT_DIR$/ch12/ch12.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch13/ch13.iml" filepath="$PROJECT_DIR$/ch13/ch13.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch14/ch14.iml" filepath="$PROJECT_DIR$/ch14/ch14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch15/ch15.iml" filepath="$PROJECT_DIR$/ch15/ch15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch16/ch16.iml" filepath="$PROJECT_DIR$/ch16/ch16.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-standard.iml" filepath="$PROJECT_DIR$/.idea/java-standard.iml" />
     </modules>
   </component>
