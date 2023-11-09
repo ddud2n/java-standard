@@ -31,7 +31,7 @@ public class MailSenderClient_example
 			in = new DataInputStream(socket.getInputStream());
 			out = new DataOutputStream(socket.getOutputStream());
 			
-			message = "develiberta@naver.com|안녕하세요|안녕하세요 잘지내시죠";
+			message = "sujin0970@naver.com|안녕하세요|안녕하세요 잘지내시죠";
 			out.writeUTF(message);
 			
 			System.out.println(in.readUTF());
